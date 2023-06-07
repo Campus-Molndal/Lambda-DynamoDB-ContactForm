@@ -9,6 +9,10 @@ The following four AWS services are used:
 - The backend is written in _Python_ and uses _Lambda_
 - The database is a _DynamoDB_ table
 
+## Solution Overview
+
+![Solution Overview](./SolutionOverview.png)
+
 ## Roles
 
 * Create a Lambda service role named _ContactRole_
@@ -74,9 +78,9 @@ The following four AWS services are used:
 
 ## S3
 
-* Create an S3 Bucket called ```contactweb-<account>-<date>-<time>```
+* Create an S3 Bucket called ```contactweb-<account>-<date>-<time>``` (the bucket must have a unique name)
 
-* Go to the properties tab in the Console UI and enable _Static webbsite hosting_
+* Go to the properties tab in the Console UI and enable _Static website hosting_
 
 * Fill in _index.html_ as index document
 
@@ -107,10 +111,11 @@ The following four AWS services are used:
 
 * Upload the _index.html_ file to the bucket and verify that it works by browsing to the S3 website
 
-* Fill in:
+* Fill in the following in the contact form:
     - Yoda
     - yoda@email.com
     - Do. Or do not. There is no try
 
 <br>
+
 * Check the DynamoDB table
